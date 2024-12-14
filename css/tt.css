@@ -1,0 +1,198 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+/* Profile container */
+.profile-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/* Heading */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table td {
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+table td:first-child {
+    text-align: left;
+    font-weight: bold;
+    width: 150px;
+}
+
+table input[readonly] {
+    border: none;
+    background-color: transparent;
+    color: #333;
+    font-size: 14px;
+    width: 100%;
+}
+
+table input[readonly]:focus {
+    outline: none;
+}
+
+table input[type="text"],
+table input[type="email"],
+table input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+table input[type="text"]:disabled {
+    background-color: #f2f2f2;
+}
+
+table .gender-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+table .gender-options label {
+    font-size: 14px;
+}
+
+table input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Profile sections */
+.profile-left {
+    width: 30%;
+    text-align: center;
+}
+
+.profile-right {
+    width: 65%;
+}
+
+.avatar-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-label {
+    display: block;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+#avatarUpload {
+    display: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Đảm bảo các nút nằm ngang nhau và cách đều */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.profile-right .edit-btn,
+.button-container button,
+.button-container a {
+    width: 48%; /* Cả 2 nút có chiều rộng bằng nhau, thay đổi nếu cần */
+    padding: 10px 20px; /* Đệm cho nút */
+    text-align: center; /* Căn giữa nội dung trong nút */
+    border-radius: 5px; /* Viền bo tròn nếu cần */
+    font-size: 16px; /* Kích thước chữ */
+    text-decoration: none; /* Bỏ gạch chân cho liên kết */
+    display: inline-block; /* Đảm bảo nút và liên kết đều là phần tử khối */
+}
+
+.save-btn {
+    background-color: #4CAF50; /* Màu nền cho nút Lưu thông tin */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Màu nền cho nút Thoát */
+    color: white;
+    text-align: center; 
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* File notes */
+.file-note {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Edit mode container */
+#edit-mode {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Profile left and right sections */
+.profile-left {
+    width: 30%;
+    text-align: center;
+}
+
+.profile-right {
+    width: 65%;
+}
+
+.edit-button:hover, .save-button:hover {
+	background-color: #0056b3;
+}
